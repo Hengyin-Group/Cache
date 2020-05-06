@@ -22,6 +22,7 @@ extension UIImage {
 
   /// Convert to data
   func cache_toData() -> Data? {
+    
     #if swift(>=4.2)
     return hasAlpha
       ? pngData()
